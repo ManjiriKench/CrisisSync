@@ -1,0 +1,47 @@
+/* Dashboard layout styles */
+
+.page-container {
+  animation: slideUp 300ms ease-out;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.section-header h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.page-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.page-grid-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.page-grid-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 1200px) {
+  .page-grid-3 { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 800px) {
+  .page-grid-2, .page-grid-3 { grid-template-columns: 1fr; }
+}

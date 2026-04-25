@@ -1,0 +1,103 @@
+/* BroadcastModal Styles */
+
+.broadcast-modal {
+  max-width: 560px;
+}
+
+.broadcast-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.broadcast-header h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.broadcast-header p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.broadcast-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.broadcast-header .btn {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.broadcast-templates {
+  margin-bottom: 16px;
+}
+
+.templates-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.template-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  margin-bottom: 6px;
+  transition: all var(--transition-fast);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.template-btn:hover {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  border-color: var(--accent-blue);
+}
+
+.broadcast-input {
+  width: 100%;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.broadcast-char-count {
+  text-align: right;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.broadcast-success {
+  text-align: center;
+  padding: 24px;
+}
+
+.broadcast-success-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.broadcast-success h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.broadcast-success p {
+  color: var(--text-muted);
+}

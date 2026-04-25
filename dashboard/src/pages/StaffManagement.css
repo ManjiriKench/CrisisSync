@@ -1,0 +1,147 @@
+/* StaffManagement Styles */
+
+.staff-page {
+  max-width: 900px;
+}
+
+.staff-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.staff-summary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.staff-summary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.staff-summary-value {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+}
+
+.staff-summary-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+.staff-floors {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.staff-floor-group {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.staff-floor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.staff-floor-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.staff-floor-count {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.staff-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.staff-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background var(--transition-fast);
+}
+
+.staff-card:last-child {
+  border-bottom: none;
+}
+
+.staff-card:hover {
+  background: var(--bg-card-hover);
+}
+
+.staff-card-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.staff-card-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.staff-card-info strong {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+}
+
+.staff-card-info span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.staff-card-floor {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.staff-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+
+.staff-status-dot.active {
+  background: var(--severity-1);
+  box-shadow: 0 0 4px var(--severity-1);
+  animation: pulse-red 2s ease-in-out infinite;
+}

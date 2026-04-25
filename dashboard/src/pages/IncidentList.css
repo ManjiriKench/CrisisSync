@@ -1,0 +1,42 @@
+/* IncidentList Styles */
+
+.incident-list-page {
+  max-width: 1100px;
+}
+
+.list-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.list-search {
+  flex: 1;
+  min-width: 220px;
+}
+
+.list-filters select {
+  min-width: 150px;
+  cursor: pointer;
+}
+
+.desc-cell {
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.82rem;
+}
+
+.incident-row:hover td {
+  color: var(--text-primary);
+}
+
+.list-footer {
+  margin-top: 12px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-align: right;
+}
